@@ -1,0 +1,32 @@
+.restaurant
+{
+    &__container
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    &__sticker
+    {
+        width: max-content;
+        float: right;
+    }
+    &__card
+    {
+        display: block;
+        width: 90%;
+        /*width: 42.5% pour tablet et desktop*/
+    }
+    &__image
+    {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    &__name
+    {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*Couleurs principales*/
+/*Couleurs d'arrières plan*/
+/*Autres*/
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("polices/Roboto/Roboto-Black.ttf") format("truetype");
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 1rem;
+  color: #353535;
+  font-weight: 700;
+  box-shadow: inset 0rem 0.1rem 0.1em lightgray;
+}
+.location__town {
+  margin-left: 1rem;
+}
+
+.exploration {
+  text-align: center;
+  background-color: #F2F2F2;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.exploration__title {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.exploration__paragraphe {
+  color: #353535;
+  font-weight: 300;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.exploration__button {
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(300deg, #9356DC 10%, #FF79DA 90%);
+  border-radius: 3rem;
+}
+
+.restaurant__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.restaurant__sticker {
+  width: max-content;
+  float: right;
+}
+.restaurant__card {
+  display: block;
+  width: 90%;
+  /*width: 42.5% pour tablet et desktop*/
+}
+.restaurant__image {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.restaurant__name {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+@font-face
+{
+    font-family: 'Roboto', sans-serif;
+    src: url('polices/Roboto/Roboto-Black.ttf') format('truetype');
+}
+*
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+button
+{
+    border: none;
+}
+li
+{
+    list-style: none;
+}

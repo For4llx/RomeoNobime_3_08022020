@@ -1,0 +1,26 @@
+.exploration
+{
+    text-align: center;
+    background-color: #F2F2F2;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    &__title
+    {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    &__paragraphe
+    {
+        color: #353535;
+        font-weight: 300;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    &__button
+    {
+        @include button;
+    }
+}
