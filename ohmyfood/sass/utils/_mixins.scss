@@ -1,14 +1,9 @@
-@mixin header-position
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 @mixin button
 {
     padding: 1rem;
     color: white;
     font-weight: 700;
-    background: linear-gradient(300deg, $primary-color 10%, $secondary-color 90%);
+    background: linear-gradient(to top left, $primary-color 10%, $secondary-color 90%);
+    box-shadow: 0rem 0.5rem 1rem lightgray;
     border-radius: 3rem;
 }
