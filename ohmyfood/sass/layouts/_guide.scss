@@ -45,6 +45,11 @@
         position: relative;
         right: 1.1rem;
         color: #7e7e7e;
+        
+        &:hover
+        {
+            color: $primary-color;
+        }
     }
     &__instruction
     {

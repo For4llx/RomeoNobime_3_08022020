@@ -114,6 +114,9 @@ li {
   right: 1.1rem;
   color: #7e7e7e;
 }
+.guide__icon:hover {
+  color: #9356DC;
+}
 .guide__instruction {
   font-weight: 500;
 }
