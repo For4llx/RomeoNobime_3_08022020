@@ -7,3 +7,16 @@
     box-shadow: 0rem 0.5rem 1rem lightgray;
     border-radius: 3rem;
 }
+@mixin heart
+{
+    font-weight: lighter;
+    font-size: 1.6rem;
+
+    &:hover
+    {
+        font-weight: bold;
+        background: linear-gradient($primary-color 10%, $secondary-color 90%);
+        background-clip: text;
+        color: transparent;
+    }
+}

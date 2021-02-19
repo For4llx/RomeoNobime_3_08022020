@@ -61,15 +61,6 @@
         position: relative;
         bottom: 2.5rem;
         left: 16.5rem;
-        font-weight: lighter;
-        font-size: 1.6rem;
-
-        &:hover
-        {
-            font-weight: bold;
-            background: linear-gradient($primary-color 10%, $secondary-color 90%);
-            background-clip: text;
-            color: transparent;
-        }
+        @include heart;
     }
 }
