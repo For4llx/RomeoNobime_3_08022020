@@ -1,21 +1,43 @@
 .restaurant
 {
-    &__container
+    background-color: #F2F2F2;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    &__title
     {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        padding-left: 1.5rem;
     }
     &__sticker
     {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
         width: max-content;
+        border-radius: 0.1rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $font-sticker-color;
+        background-color: $sticker-color;
+        box-shadow: 0rem 0.2rem 0.8rem black;
         float: right;
+        position: relative;
+        bottom: 13rem;
+
+        &--disabled
+        {
+            display: none;
+        }
     }
     &__card
     {
-        display: block;
-        width: 90%;
-        /*width: 42.5% pour tablet et desktop*/
+        margin-top: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        border-radius: 1rem;
+        background-color: white;
+        box-shadow: 0rem 0.5rem 1rem lightgray;
     }
     &__image
     {
@@ -25,8 +47,29 @@
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
-    &__name
+    &__description
     {
-        font-weight: bold;
+        padding: 1rem;
+    }
+    &__district
+    {
+        font-weight: 300;
+    }
+    &__heart
+    {
+        float: inline-start;
+        position: relative;
+        bottom: 2.5rem;
+        left: 16.5rem;
+        font-weight: lighter;
+        font-size: 1.6rem;
+
+        &:hover
+        {
+            font-weight: bold;
+            background: linear-gradient($primary-color 10%, $secondary-color 90%);
+            background-clip: text;
+            color: transparent;
+        }
     }
 }

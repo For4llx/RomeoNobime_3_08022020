@@ -118,19 +118,40 @@ li {
   font-weight: 500;
 }
 
-.restaurant__container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.restaurant {
+  background-color: #F2F2F2;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.restaurant__title {
+  padding-left: 1.5rem;
 }
 .restaurant__sticker {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   width: max-content;
+  border-radius: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #189576;
+  background-color: #99e2d0;
+  box-shadow: 0rem 0.2rem 0.8rem black;
   float: right;
+  position: relative;
+  bottom: 13rem;
+}
+.restaurant__sticker--disabled {
+  display: none;
 }
 .restaurant__card {
-  display: block;
-  width: 90%;
-  /*width: 42.5% pour tablet et desktop*/
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0rem 0.5rem 1rem lightgray;
 }
 .restaurant__image {
   width: 100%;
@@ -139,8 +160,25 @@ li {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
 }
-.restaurant__name {
+.restaurant__description {
+  padding: 1rem;
+}
+.restaurant__district {
+  font-weight: 300;
+}
+.restaurant__heart {
+  float: inline-start;
+  position: relative;
+  bottom: 2.5rem;
+  left: 16.5rem;
+  font-weight: lighter;
+  font-size: 1.6rem;
+}
+.restaurant__heart:hover {
   font-weight: bold;
+  background: linear-gradient(#9356DC 10%, #FF79DA 90%);
+  background-clip: text;
+  color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
