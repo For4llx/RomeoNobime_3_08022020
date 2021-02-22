@@ -128,10 +128,24 @@ li {
 .restaurant {
   background-color: #F2F2F2;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 .restaurant__title {
   padding-left: 1.5rem;
+}
+.restaurant__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .restaurant__container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  .restaurant__container {
+    flex-direction: column;
+  }
 }
 .restaurant__sticker {
   padding-right: 0.5rem;
@@ -147,19 +161,31 @@ li {
   box-shadow: 0rem 0.2rem 0.8rem black;
   position: absolute;
   top: 1rem;
-  right: 5%;
+  right: 1rem;
 }
 .restaurant__sticker--disabled {
   display: none;
 }
 .restaurant__card {
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 1rem;
   position: relative;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0rem 0.5rem 1rem lightgray;
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .restaurant__card {
+    margin: 0.5rem;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .restaurant__card {
+    margin: 1rem;
+    margin-bottom: 0rem;
+    width: auto;
+  }
 }
 .restaurant__image {
   width: 100%;
@@ -170,6 +196,7 @@ li {
 }
 .restaurant__description {
   padding: 1rem;
+  padding-right: 4rem;
 }
 .restaurant__district {
   font-weight: 300;
@@ -177,7 +204,7 @@ li {
 .restaurant__heart {
   position: absolute;
   top: 11.5rem;
-  right: 5%;
+  right: 1.5rem;
   font-weight: lighter;
   font-size: 1.6rem;
 }

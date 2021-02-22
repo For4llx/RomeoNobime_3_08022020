@@ -2,11 +2,25 @@
 {
     background-color: #F2F2F2;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 
     &__title
     {
         padding-left: 1.5rem;
+    }
+    &__container
+    {
+        display: flex;
+        justify-content: space-evenly;
+
+        @include tablet
+        {
+            flex-wrap: wrap;
+        }
+        @include mobile
+        {
+            flex-direction: column;
+        }
     }
     &__sticker
     {
@@ -23,7 +37,7 @@
         box-shadow: 0rem 0.2rem 0.8rem black;
         position: absolute;
         top: 1rem;
-        right: 5%;
+        right: 1rem;
 
         &--disabled
         {
@@ -32,13 +46,24 @@
     }
     &__card
     {
-        margin-top: 1rem;
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin: 1rem;
         position: relative;
         border-radius: 1rem;
         background-color: white;
         box-shadow: 0rem 0.5rem 1rem lightgray;
+        width: 25%;
+
+        @include tablet
+        {
+            margin: 0.5rem;
+            width: 45%;
+        }
+        @include mobile
+        {
+            margin: 1rem;
+            margin-bottom: 0rem;
+            width: auto;
+        } 
     }
     &__image
     {
@@ -51,6 +76,7 @@
     &__description
     {
         padding: 1rem;
+        padding-right: 4rem;
     }
     &__district
     {
@@ -59,10 +85,8 @@
     &__heart
     {
         position: absolute;
-
         top: 11.5rem;
-        right: 5%; 
-
+        right: 1.5rem;
         @include heart;
     }
 }
