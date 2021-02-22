@@ -21,9 +21,9 @@
         color: $font-sticker-color;
         background-color: $sticker-color;
         box-shadow: 0rem 0.2rem 0.8rem black;
-        float: right;
-        position: relative;
-        bottom: 13rem;
+        position: absolute;
+        top: 1rem;
+        right: 5%;
 
         &--disabled
         {
@@ -35,6 +35,7 @@
         margin-top: 1rem;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
+        position: relative;
         border-radius: 1rem;
         background-color: white;
         box-shadow: 0rem 0.5rem 1rem lightgray;
@@ -57,10 +58,11 @@
     }
     &__heart
     {
-        float: inline-start;
-        position: relative;
-        bottom: 2.5rem;
-        left: 16.5rem;
+        position: absolute;
+
+        top: 11.5rem;
+        right: 5%; 
+
         @include heart;
     }
 }

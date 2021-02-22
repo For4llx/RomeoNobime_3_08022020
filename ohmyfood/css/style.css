@@ -145,9 +145,9 @@ li {
   color: #189576;
   background-color: #99e2d0;
   box-shadow: 0rem 0.2rem 0.8rem black;
-  float: right;
-  position: relative;
-  bottom: 13rem;
+  position: absolute;
+  top: 1rem;
+  right: 5%;
 }
 .restaurant__sticker--disabled {
   display: none;
@@ -156,6 +156,7 @@ li {
   margin-top: 1rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  position: relative;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0rem 0.5rem 1rem lightgray;
@@ -174,10 +175,9 @@ li {
   font-weight: 300;
 }
 .restaurant__heart {
-  float: inline-start;
-  position: relative;
-  bottom: 2.5rem;
-  left: 16.5rem;
+  position: absolute;
+  top: 11.5rem;
+  right: 5%;
   font-weight: lighter;
   font-size: 1.6rem;
 }
