@@ -81,8 +81,12 @@ li {
 }
 .guide__list {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .guide__list {
+    flex-direction: column;
+  }
 }
 .guide__bullet {
   margin-top: 1rem;
@@ -105,8 +109,8 @@ li {
   font-weight: 700;
   border-radius: 30rem;
   background-color: #9356DC;
-  height: 1rem;
-  width: 1rem;
+  min-height: 1rem;
+  min-width: 1rem;
 }
 .guide__span-icon {
   display: inline-block;
@@ -222,7 +226,6 @@ li {
 }
 .footer__logo {
   height: 1rem;
-  fill: white;
 }
 .footer__list {
   margin-top: 1rem;
