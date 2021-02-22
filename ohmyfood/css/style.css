@@ -108,10 +108,14 @@ li {
   height: 1rem;
   width: 1rem;
 }
+.guide__span-icon {
+  display: inline-block;
+  text-align: center;
+  width: 1rem;
+  margin-right: 1.5rem;
+}
 .guide__icon {
   font-size: 1.2rem;
-  position: relative;
-  right: 1.1rem;
   color: #7e7e7e;
 }
 .guide__icon:hover {
