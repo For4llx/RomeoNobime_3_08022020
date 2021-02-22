@@ -184,4 +184,32 @@ li {
   color: transparent;
 }
 
+.footer {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  background-color: #353535;
+}
+.footer__logo {
+  height: 1rem;
+  fill: white;
+}
+.footer__list {
+  margin-top: 1rem;
+  color: white;
+}
+.footer__span-icon {
+  display: inline-block;
+  text-align: center;
+  width: 1rem;
+}
+.footer__icon {
+  font-size: 0.8rem;
+}
+.footer__bullet {
+  margin-bottom: 0.5rem;
+}
+.footer__link {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
