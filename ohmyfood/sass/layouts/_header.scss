@@ -1,5 +1,6 @@
 .header
 {
+    padding-top: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,17 +8,18 @@
     
     &__logo
     {
-        padding: 1rem;
+        height: 2.9rem;
+        width: 10.3rem;
     }
     &__location
     {
+        padding: 1.1rem;
+        padding-right: 3rem;
         display: flex;
         justify-content: center;
-        align-items: center;
-        background-color: #eaeaea;  
-        padding: 1rem;
         color: #353535;
         font-weight: 700;
+        background-color: #eaeaea;  
         box-shadow: inset 0rem 0.1rem 0.1em lightgray;
         width: 100%;
     }
