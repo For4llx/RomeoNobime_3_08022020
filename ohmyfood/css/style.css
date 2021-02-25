@@ -1,11 +1,22 @@
 @font-face {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Shrikhand", sans-serif;
   src: url("polices/Roboto/Roboto-Black.ttf") format("truetype");
 }
 * {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   padding: 0px;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+body {
+  background-image: url(/home/nobime/Documents/codes/openclassrooms/RomeoNobime_3_08022020/ohmyfood/images/maquettes/Accueil.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.8;
 }
 
 a {
@@ -43,90 +54,6 @@ li {
 }
 .header__town {
   margin-left: 1rem;
-}
-
-.exploration {
-  text-align: center;
-  background-color: #F2F2F2;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-.exploration__title {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-.exploration__paragraphe {
-  color: #353535;
-  font-weight: 300;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-.exploration__button {
-  padding: 1rem;
-  color: white;
-  font-weight: 700;
-  background: linear-gradient(to top left, #9356DC 10%, #FF79DA 90%);
-  box-shadow: 0rem 0.5rem 1rem lightgray;
-  border-radius: 3rem;
-}
-
-.guide {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-.guide__title {
-  padding-left: 1.5rem;
-}
-.guide__list {
-  display: flex;
-  justify-content: space-around;
-}
-@media screen and (max-width: 768px) {
-  .guide__list {
-    flex-direction: column;
-  }
-}
-.guide__bullet {
-  margin-top: 1rem;
-  margin-left: 2rem;
-  margin-right: 1.5rem;
-  display: flex;
-  align-items: center;
-  padding: 1.5rem;
-  background-color: #F2F2F2;
-  border-radius: 1rem;
-  box-shadow: 0rem 0rem 0.5rem lightgray;
-}
-.guide__number {
-  position: relative;
-  right: 2.2rem;
-  text-align: center;
-  padding: 0.2rem;
-  font-size: 0.8rem;
-  color: white;
-  font-weight: 700;
-  border-radius: 30rem;
-  background-color: #9356DC;
-  min-height: 1rem;
-  min-width: 1rem;
-}
-.guide__span-icon {
-  display: inline-block;
-  text-align: center;
-  width: 1rem;
-  margin-right: 1.5rem;
-}
-.guide__icon {
-  font-size: 1.2rem;
-  color: #7e7e7e;
-}
-.guide__icon:hover {
-  color: #9356DC;
-}
-.guide__instruction {
-  font-weight: 500;
 }
 
 .restaurant {
@@ -209,13 +136,14 @@ li {
   position: absolute;
   top: 11.5rem;
   right: 1.5rem;
-  font-weight: lighter;
   font-size: 1.6rem;
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .restaurant__heart:hover {
   font-weight: bold;
   background: linear-gradient(#9356DC 10%, #FF79DA 90%);
-  background-clip: text;
   color: transparent;
 }
 
@@ -244,6 +172,93 @@ li {
 }
 .footer__link {
   color: white;
+}
+
+.exploration {
+  text-align: center;
+  background-color: #F2F2F2;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.exploration__title {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.exploration__paragraphe {
+  color: #353535;
+  font-weight: 300;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.exploration__button {
+  padding: 1rem;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(to top left, #9356DC 10%, #FF79DA 90%);
+  box-shadow: 0rem 0.5rem 1rem lightgray;
+  border-radius: 3rem;
+}
+
+.guide {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.guide__title {
+  padding-left: 1.5rem;
+}
+.guide__list {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .guide__list {
+    flex-direction: column;
+  }
+}
+.guide__bullet {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #F2F2F2;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 0.5rem lightgray;
+}
+.guide__bullet:hover {
+  background-color: #9356DC, 25%;
+}
+.guide__number {
+  position: relative;
+  right: 2.2rem;
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 30rem;
+  background-color: #9356DC;
+  min-height: 1rem;
+  min-width: 1rem;
+}
+.guide__span-icon {
+  display: inline-block;
+  text-align: center;
+  width: 1rem;
+  margin-right: 1.5rem;
+}
+.guide__icon {
+  font-size: 1.2rem;
+  color: #7e7e7e;
+}
+.guide__icon:hover {
+  color: #9356DC;
+}
+.guide__instruction {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

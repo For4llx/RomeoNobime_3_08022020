@@ -9,14 +9,15 @@
 }
 @mixin heart
 {
-    font-weight: lighter;
     font-size: 1.6rem;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
     &:hover
     {
         font-weight: bold;
         background: linear-gradient($primary-color 10%, $secondary-color 90%);
-        background-clip: text;
         color: transparent;
     }
 }

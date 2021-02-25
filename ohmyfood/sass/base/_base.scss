@@ -1,6 +1,6 @@
 @font-face
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto','Shrikhand', sans-serif;
     src: url('polices/Roboto/Roboto-Black.ttf') format('truetype');
 }
 *
@@ -8,6 +8,17 @@
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     padding: 0px;
+}
+h1
+{
+    font-family: 'Shrikhand', sans-serif;
+}
+body
+{
+    background-image: url(/home/nobime/Documents/codes/openclassrooms/RomeoNobime_3_08022020/ohmyfood/images/maquettes/Accueil.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.8;
 }
 a
 {
