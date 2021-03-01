@@ -1,4 +1,39 @@
 .footer
 {
-    @include footer
+    padding: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: $background-color-footer;
+
+    &__title
+    {
+        font-size: 1rem;
+        color: white;
+    }
+    &__logo
+    {
+        height: 1rem;
+    }
+    &__list
+    {
+        margin-top: 1rem;
+        color: white;
+    }
+    &__span-icon
+    {
+        display: inline-block;
+        text-align: center;
+        width: 1rem;
+    }
+    &__icon
+    {
+        font-size: 0.8rem;
+    }
+    &__bullet
+    {
+        margin-bottom: 0.5rem;
+    }
+    &__link
+    {
+        color: white;
+    }
 }
