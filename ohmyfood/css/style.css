@@ -75,6 +75,7 @@ li {
 .main__title {
   padding-left: 1.25rem;
   font-size: 1.7rem;
+  padding-right: 5rem;
 }
 .main__heart {
   position: absolute;
@@ -100,7 +101,6 @@ li {
 }
 @media screen and (max-width: 480px) {
   .main__subtitle {
-    margin-bottom: 0rem;
     width: auto;
   }
 }
@@ -120,10 +120,10 @@ li {
   .main__section {
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 20rem;
   }
 }
 .main__card {
+  margin-bottom: 1rem;
   padding: 0.7rem;
   padding-left: 0.7rem;
   padding-right: 1.3rem;
@@ -248,13 +248,13 @@ li {
 @media screen and (max-width: 768px) {
   .guide__list {
     flex-direction: column;
-    height: 16.6rem;
   }
 }
 .guide__bullet {
   padding: 1.5rem;
   margin-left: 2rem;
   margin-right: 1.3rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   background-color: #F2F2F2;

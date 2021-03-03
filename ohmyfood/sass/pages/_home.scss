@@ -44,7 +44,6 @@
         @include tablet 
         {
             flex-direction: column;
-            height: 16.6rem;
         }
     }
     &__bullet
@@ -52,6 +51,7 @@
         padding: 1.5rem;
         margin-left: 2rem;
         margin-right: 1.3rem;
+        margin-bottom: 1rem;
         display: flex;
         align-items: center;
         background-color: #F2F2F2;
