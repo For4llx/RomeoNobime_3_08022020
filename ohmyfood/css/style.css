@@ -297,26 +297,14 @@ li {
   background-color: #F2F2F2;
   padding-top: 3.45rem;
   padding-bottom: 4.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .restaurant__title {
   margin-left: 1.2rem;
   margin-bottom: 1.3rem;
-}
-.restaurant__container {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-  .restaurant__container {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 480px) {
-  .restaurant__container {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 66rem;
-  }
+  width: 100%;
 }
 .restaurant__sticker {
   padding: 0.7rem;
@@ -342,19 +330,20 @@ li {
   border-radius: 1rem;
   background-color: white;
   box-shadow: 0rem 0.5rem 1rem lightgray;
-  width: 25%;
+  width: 20%;
 }
 @media screen and (max-width: 768px) {
   .restaurant__card {
-    width: 45%;
+    width: 42.5%;
   }
 }
 @media screen and (max-width: 480px) {
   .restaurant__card {
-    margin: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    width: auto;
+    width: 100%;
   }
 }
 .restaurant__image {

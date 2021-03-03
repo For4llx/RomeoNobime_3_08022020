@@ -102,27 +102,15 @@
     background-color: #F2F2F2;
     padding-top: 3.45rem;
     padding-bottom: 4.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     &__title
     {
         margin-left: 1.2rem;
         margin-bottom: 1.3rem;
-    }
-    &__container
-    {
-        display: flex;
-        justify-content: space-between;
-
-        @include tablet
-        {
-            flex-wrap: wrap;
-        }
-        @include mobile
-        {
-            flex-direction: column;
-            flex-wrap: nowrap;
-            height: 66rem;
-        }
+        width: 100%;
     }
     &__sticker
     {
@@ -152,18 +140,19 @@
         border-radius: 1rem;
         background-color: white;
         box-shadow: 0rem 0.5rem 1rem lightgray;
-        width: 25%;
+        width: 20%;
 
         @include tablet
         {
-            width: 45%;
+            width: 42.5%;
         }
         @include mobile
         {
-            margin: 0rem;
+            margin-top: 0rem;
+            margin-bottom: 1rem;
             margin-left: 1rem;
             margin-right: 1rem;
-            width: auto;
+            width: 100%;
         } 
     }
     &__image
