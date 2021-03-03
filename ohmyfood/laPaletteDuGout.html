@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <!--Gestion affichage mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Permet d'avoir accès aux icones de font-awesome-->
+        <script src="https://kit.fontawesome.com/57ebff3fcc.js" crossorigin="anonymous"></script>
+
+        <!--PErmet d'avoir accès aux fonts google-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <!--Permet d'avoir accès aux fonts Roboto-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!--Permet d'avoir accès aux fonts Shrikhand-->
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
+        <!--CSS compilé par SASS-->
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <title>La palette du goût - ohmyfood</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a class="test" href="index.html"><i class="header__arrow fas fa-arrow-left"></i></a>
+            <img  class="header__logo" src="images/logos/ohmyfood.svg" alt="logo ohmyfood"/>
+            <img class="header__image" src="images/restaurants/palette-du-gout.jpg" alt="À la française" />
+        </header>
+
+        <main class="main">
+            <h1 class="main__title">La palette du goût</h1>
+            <i class="main__heart fas fa-heart"></i>
+            
+            <section class="main__section">
+                <h2 class="main__subtitle"><span class="main__underline">ENTR</span>ÉES</h2>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Fricassée d'escargot</h3>
+
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Au piment d'espelette</p>
+                            <p class="main__price">25€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Foie gras de canard mi-cuit</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Et ses copeaux de truffe noire</p>
+                            <p class="main__price">35€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Oeuf au plat</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Assaisonné à la truffe sur lit de...</p>
+                            <p class="main__price">20€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section class="main__section">
+                <h2 class="main__subtitle"><span class="main__underline">PLAT</span>S</h2>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Filet de boeuf aux herbes</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Accompagné de sa ribambelle de légumes</p>
+                            <p class="main__price">40€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Parmentier de queue de boeuf</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">À la truffe noire sur sa purée de panais</p>
+                            <p class="main__price">35€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Filet de Turbot</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Aux agrumes</p>
+                            <p class="main__price">44€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <section class="main__section">
+                <h2 class="main__subtitle"><span class="main__underline">DESS</span>ERTS</h2>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Paris-Brest</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Revisité</p>
+                            <p class="main__price">18€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Macaron au chocolat d'exception</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Et glace à la vanille de Madagascar</p>
+                            <p class="main__price">22€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="main__card">
+                    <figure>
+                        <h3 class="main__meal">Mousse au chocolat</h3>
+                        
+                        <figcaption class="main__description">
+                            <p class="main__meal-info">Au piment d'espelette et à la truffe noire</p>
+                            <p class="main__price">23€</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <div class="main__order">
+                <button class="main__button" type="button">Commander</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <h1 class="footer__title">ohmyfood</h1>
+
+            <ul class="footer__list">
+                <li class="footer__bullet">
+                    <a class="footer__link" href="#">
+                        <span class="footer__span-icon"><i class="footer__icon fas fa-utensils"></i></span>
+                        Proposer un restaurant
+                    </a>
+                </li>
+
+                <li class="footer__bullet">
+                    <a class="footer__link" href="#">
+                        <span class="footer__span-icon"><i class="footer__icon fas fa-hands-helping"></i></span>
+                        Devenir partenaire
+                    </a>
+                </li>
+
+                <li class="footer__bullet">
+                    <a class="footer__link" href="#">Mentions légales</a>
+                </li>
+                
+                <li class="footer__bullet">
+                    <a class="footer__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

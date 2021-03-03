@@ -165,6 +165,10 @@ li {
   box-shadow: 0rem 0.5rem 1rem lightgray;
   border-radius: 3rem;
 }
+.main__button:hover {
+  background: linear-gradient(to top left, #ae80e5 10%, #fface8 90%);
+  box-shadow: 0rem 1rem 2rem lightgray;
+}
 
 .footer {
   padding: 1.5rem;
@@ -224,6 +228,10 @@ li {
   box-shadow: 0rem 0.5rem 1rem lightgray;
   border-radius: 3rem;
 }
+.exploration__button:hover {
+  background: linear-gradient(to top left, #ae80e5 10%, #fface8 90%);
+  box-shadow: 0rem 1rem 2rem lightgray;
+}
 
 .guide {
   padding-top: 3rem;
@@ -254,7 +262,10 @@ li {
   box-shadow: 0rem 0rem 0.5rem lightgray;
 }
 .guide__bullet:hover {
-  background-color: #9356DC, 25%;
+  background-color: #d7c0f2;
+}
+.guide__bullet:hover i {
+  color: #9356DC;
 }
 .guide__number {
   position: relative;
@@ -270,7 +281,6 @@ li {
   min-width: 1rem;
 }
 .guide__span-icon {
-  display: inline-block;
   text-align: center;
   width: 1rem;
   margin-right: 1.5rem;
@@ -278,9 +288,6 @@ li {
 .guide__icon {
   font-size: 1.2rem;
   color: #7e7e7e;
-}
-.guide__icon:hover {
-  color: #9356DC;
 }
 .guide__instruction {
   font-weight: 500;

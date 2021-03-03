@@ -6,4 +6,10 @@
     background: linear-gradient(to top left, $primary-color 10%, $secondary-color 90%);
     box-shadow: 0rem 0.5rem 1rem lightgray;
     border-radius: 3rem;
+
+    &:hover
+    {
+        background: linear-gradient(to top left, lighten($primary-color, 10%) 10%, lighten($secondary-color, 10%) 90%);
+        box-shadow: 0rem 1rem 2rem lightgray;
+    }
 }

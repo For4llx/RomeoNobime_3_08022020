@@ -60,7 +60,11 @@
 
         &:hover
         {
-            background-color: ($primary-color, 25%);
+            background-color: lighten($primary-color, 25%);
+            i
+            {
+                color: $primary-color;
+            }
         }
     }
     &__number
@@ -79,7 +83,6 @@
     }
     &__span-icon
     {
-        display: inline-block;
         text-align: center;
         width: 1rem;
         margin-right: 1.5rem;
@@ -88,11 +91,6 @@
     {
         font-size: 1.2rem;
         color: #7e7e7e;
-        
-        &:hover
-        {
-            color: $primary-color;
-        }
     }
     &__instruction
     {
