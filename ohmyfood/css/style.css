@@ -164,10 +164,25 @@ li {
   background: linear-gradient(to top left, #9356DC 10%, #FF79DA 90%);
   box-shadow: 0rem 0.5rem 1rem lightgray;
   border-radius: 3rem;
+  position: relative;
+  z-index: 1;
 }
-.main__button:hover {
+.main__button:hover::after {
+  opacity: 1;
+}
+.main__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(to top left, #ae80e5 10%, #fface8 90%);
   box-shadow: 0rem 1rem 2rem lightgray;
+  border-radius: 3rem;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .footer {
@@ -227,10 +242,25 @@ li {
   background: linear-gradient(to top left, #9356DC 10%, #FF79DA 90%);
   box-shadow: 0rem 0.5rem 1rem lightgray;
   border-radius: 3rem;
+  position: relative;
+  z-index: 1;
 }
-.exploration__button:hover {
+.exploration__button:hover::after {
+  opacity: 1;
+}
+.exploration__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background: linear-gradient(to top left, #ae80e5 10%, #fface8 90%);
   box-shadow: 0rem 1rem 2rem lightgray;
+  border-radius: 3rem;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .guide {
