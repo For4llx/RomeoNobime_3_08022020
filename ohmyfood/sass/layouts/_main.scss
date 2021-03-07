@@ -66,7 +66,21 @@
         border-radius: 1rem;
         box-shadow: 0rem 0.5rem 1rem lightgray;
         width: 28%;
+        animation: fade-in 2s;
 
+        @keyframes fade-in
+        {
+            from
+            {
+                transform: translateY(4rem);
+                opacity: 0;
+            }
+            to
+            {
+                transform: translateY(0rem);
+                opacity: 1;
+            }
+        }
         @include tablet
         {
             width: auto;
