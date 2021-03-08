@@ -59,7 +59,7 @@
     &__content
     {
         padding: 0.7rem;
-        padding-right: 1.3;
+        width: 95%;
     }
     &__card
     {
@@ -68,18 +68,47 @@
         border-radius: 1rem;
         box-shadow: 0rem 0.5rem 1rem lightgray;
         width: 28%;
+        height: max-content;
         animation: fade-in 2s;
 
-        &::after
+        &:hover
         {
-            content: "";
-            top: 0rem;
-            bottom: 0rem;
-            left: 0rem;
-            right: 0rem;
-            width: 30%;
-            background-color: green;
-            overflow: hidden;
+            .main__validation
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $sticker-color;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                width: 20%;
+                transform-origin: right;
+                animation: slide-in 1s;
+            }
+        }
+
+        @keyframes roll-in
+        {
+            from
+            {
+                transform: translateX(2rem) rotate(0turn);
+            }
+            to
+            {
+                transform: translateX(0rem) rotate(2turn);
+            }
+        }
+
+        @keyframes slide-in
+        {
+            from
+            {
+                transform: scaleX(0);
+            }
+            to
+            {
+                transform: scaleX(1);
+            }
         }
 
         @keyframes fade-in
@@ -99,6 +128,20 @@
         {
             width: auto;
         }
+    }
+    &__link
+    {
+        display: flex;
+    }
+    &__validation
+    {
+        display: none;
+    }
+    &__icon
+    {
+        color: white;
+        font-size: 1.5rem;
+        animation: roll-in 1s;
     }
     &__meal
     {
