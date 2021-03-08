@@ -68,6 +68,18 @@
         width: 28%;
         animation: fade-in 2s;
 
+        &::after
+        {
+            content: "";
+            top: 0rem;
+            bottom: 0rem;
+            left: 0rem;
+            right: 0rem;
+            width: 30%;
+            background-color: green;
+            overflow: hidden;
+        }
+
         @keyframes fade-in
         {
             from
