@@ -133,6 +133,17 @@
             display: none;
         }
     }
+    &__heart-position
+    {
+        position: absolute;
+        display: inline-block;
+        top: 12.25rem;
+        right: 1.7rem;
+    }
+    &__heart
+    {
+        @include heart;
+    }
     &__card
     {
         margin: 1rem;
@@ -173,13 +184,5 @@
     &__district
     {
         font-weight: 300;
-    }
-    &__heart
-    {
-        position: absolute;
-        top: 12.25rem;
-        right: 1.7rem;
-
-        @include heart;
     }
 }
