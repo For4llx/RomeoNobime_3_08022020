@@ -85,47 +85,13 @@
                 background-color: $sticker-color;
                 border-top-right-radius: 1rem;
                 border-bottom-right-radius: 1rem;
-                width: 20%;
+                min-width: 20%;
                 transform-origin: right;
                 animation: slide-in 1s;
             }
-        }
-
-        @keyframes roll-in
-        {
-            from
+            .main__content
             {
-                transform: translateX(2rem) rotate(0turn);
-            }
-            to
-            {
-                transform: translateX(0rem) rotate(2turn);
-            }
-        }
-
-        @keyframes slide-in
-        {
-            from
-            {
-                transform: scaleX(0);
-            }
-            to
-            {
-                transform: scaleX(1);
-            }
-        }
-
-        @keyframes fade-in
-        {
-            from
-            {
-                transform: translateY(4rem);
-                opacity: 0;
-            }
-            to
-            {
-                transform: translateY(0rem);
-                opacity: 1;
+                max-width: 80%;
             }
         }
         @include tablet
@@ -150,20 +116,32 @@
     &__meal
     {
         margin-bottom: 0.1rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     &__description
     {
         display: flex;
         justify-content: space-between;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     &__meal-info
     {
         font-weight: 300;
+        width: 85%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     }
     &__price
     {
         font-weight: 700;
         color: $background-color-footer;
+        width: 15%;
+        text-align: center;
     }
     &__order
     {
@@ -175,5 +153,42 @@
     {
         width: 12rem;
         @include button;
+    }
+    @keyframes roll-in
+    {
+        from
+        {
+            transform: translateX(2rem) rotate(0turn);
+        }
+        to
+        {
+            transform: translateX(0rem) rotate(2turn);
+        }
+    }
+
+    @keyframes slide-in
+    {
+        from
+        {
+            transform: scaleX(0);
+        }
+        to
+        {
+            transform: scaleX(1);
+        }
+    }
+
+    @keyframes fade-in
+    {
+        from
+        {
+            transform: translateY(4rem);
+            opacity: 0;
+        }
+        to
+        {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
     }
 }
