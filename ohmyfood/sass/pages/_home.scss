@@ -1,3 +1,51 @@
+.loading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translateY(-100%);
+    animation: ends 3s;
+
+    &__icon
+    {
+        font-size: 4rem;
+        color: $background-color-footer;
+        animation: spin 1s;
+        animation-iteration-count: 3;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes spin
+    {
+        from
+        {
+            transform: rotate(0turn);
+        }
+        to
+        {
+            transform: rotate(1turn);
+        }    
+    }
+    @keyframes ends
+    {
+        0%
+        {
+            transform: translateY(0%);
+        }
+        99%
+        {
+            transform: translateY(0%);
+        }
+        100%
+        {
+            transform: translateY(-100%);
+        }   
+    }
+}
 .exploration
 {
     text-align: center;
