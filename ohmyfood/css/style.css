@@ -249,7 +249,6 @@ li {
   border-radius: 3rem;
   opacity: 0;
   z-index: -1;
-  transition: opacity 250ms;
 }
 @keyframes roll-in {
   from {
@@ -392,7 +391,6 @@ li {
   border-radius: 3rem;
   opacity: 0;
   z-index: -1;
-  transition: opacity 250ms;
 }
 
 .guide {
