@@ -156,10 +156,10 @@ li {
 .main__content {
   padding: 0.7rem;
   width: 100%;
-  margin-right: -5.5rem;
+  margin-right: -30%;
 }
 .main__card {
-  width: 90%;
+  width: 28%;
   overflow: hidden;
   background-color: white;
   border-radius: 1rem;
@@ -193,8 +193,7 @@ li {
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  width: 30%;
   transform: translateX(100%);
   transition: transform 400ms;
 }
