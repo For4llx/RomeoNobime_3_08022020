@@ -8,6 +8,8 @@
     
     &:hover
     {   
+        -webkit-text-stroke: 1px transparent;
+        
         &::after
         {
             animation: fill-up 250ms;
@@ -26,7 +28,6 @@
         background: linear-gradient($primary-color 10%, $secondary-color 90%);
         -webkit-background-clip: text;
         -webkit-text-stroke: 1px transparent;
-        background-clip: text;
         opacity: 0;
         z-index: -1;
     }
