@@ -206,10 +206,14 @@ li {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  width: 100%;
+  transition: width 400ms;
 }
 .main__description {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  transition: width 400ms;
 }
 .main__meal-info {
   font-weight: 300;
