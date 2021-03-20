@@ -15,15 +15,11 @@
         font-size: 1.7rem;
         padding-right: 5rem;
     }
-    &__heart-position
+    &__heart
     {
-        display: inline-block;
         position: absolute;
         top: 2.4rem;
         right: 2.35rem;
-    }
-    &__heart
-    {
         @include heart;
     }
     &__subtitle
@@ -170,19 +166,6 @@
             transform: translateX(0rem) rotate(2turn);
         }
     }
-
-    @keyframes slide-in
-    {
-        from
-        {
-            transform: scaleX(0);
-        }
-        to
-        {
-            transform: scaleX(1);
-        }
-    }
-
     @keyframes fade-in
     {
         from

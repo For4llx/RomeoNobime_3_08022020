@@ -181,15 +181,12 @@
             display: none;
         }
     }
-    &__heart-position
+    &__heart
     {
         position: absolute;
         display: inline-block;
         top: 12.25rem;
         right: 1.7rem;
-    }
-    &__heart
-    {
         @include heart;
     }
     &__card

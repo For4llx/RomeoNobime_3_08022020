@@ -1,47 +1,19 @@
 @mixin heart
 {
-    position: relative;
     font-size: 1.4rem;
     color: transparent;
     -webkit-text-stroke: 1px black;
-    z-index: 1;
-    
+    -webkit-background-clip: text;
+    padding: 0.1rem;
+    background-image: linear-gradient($primary-color 10%, $secondary-color 90%);
+    background-repeat: no-repeat;
+    background-position-y: 1.4rem;
+    transition: background-position-y 400ms;
+    transition-timing-function: ease-in-out;
+
     &:hover
-    {   
-        -webkit-text-stroke: 1px transparent;
-        
-        &::after
-        {
-            animation: fill-up 250ms;
-            transform-origin: bottom;
-            opacity: 1;
-        }
-    }
-    &::after
     {
-        content: "\f004";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient($primary-color 10%, $secondary-color 90%);
-        -webkit-background-clip: text;
+        background-position-y: 0;
         -webkit-text-stroke: 1px transparent;
-        opacity: 0;
-        z-index: -1;
-    }
-    @keyframes fill-up
-    {
-        from
-        {
-            transform: scale(0);
-            opacity: 0.5;
-        }
-        to
-        {
-            transform: scale(1);
-            opacity: 1;
-        }
     }
 }
